@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>questaoc</short-name>
+  <uri>questaoC</uri>
+  <function>
+      <name>isPrimo</name>
+      <function-class>questaoC.NumPrimos</function-class>
+      <function-signature>boolean isPrimo(int)</function-signature>
+  </function>
+  <tag-file>
+      <name>QuestaoC</name>
+      <path>/WEB-INF/tags/questaoC.tag</path>
+  </tag-file>
+</taglib>
