@@ -30,7 +30,8 @@ public class Servlet extends HttpServlet {
         String idade = request.getParameter("idade");
         
         PrintWriter pw = response.getWriter();
-        pw.print(String.format("<root><method>GET</method><name>%s</name><idade>%s</idade></root>",nome,idade));
+//        pw.print(String.format("<root><method>GET</method><name>%s</name><idade>%s</idade></root>",nome,idade));
+        pw.print(String.format("\"{method\": \"GET\", \"nome\":%s, \"idade\": %s}",nome,idade));
         
     }
 
@@ -41,7 +42,8 @@ public class Servlet extends HttpServlet {
         String idade = request.getParameter("idade");
         
         PrintWriter pw = response.getWriter();
-        pw.print(String.format("<root><method>POST</method><name>%s</name><idade>%s</idade></root>",nome,idade));
+//        pw.print(String.format("<root><method>POST</method><name>%s</name><idade>%s</idade></root>",nome,idade));
+        pw.print(String.format("{\"method\": \"POST\", \"nome\":\"%s\", \"idade\": %s}",nome,idade));
         
     }
 
